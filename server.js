@@ -13,6 +13,7 @@ server.use(express.urlencoded({ extended: false }))
 server.set("view engine", "ejs")
 // in case we have need for statics
 server.use(express.static(path.join(__dirname, 'public')))
+server.use(express.static(path.join(__dirname, 'client', 'dist')))
 
 // Server Security is
 // important to us
@@ -44,10 +45,8 @@ server.use('/api/v2', v2Router)
 const math = require("./utils/math")
 
 // Every other Routes not included in V1 or V2
-server.get('/', async (req, res) => {
-
-    console.log(math.div(1, 2))
-    res.status(200).json({ status: true })
+server.get('*', async (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "dist", "index.html"))
 })
 
 const port = process.env.PORT || 4000
