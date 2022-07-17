@@ -3,7 +3,7 @@ const server = express()
 var path = require('path')
 const cors = require('cors')
 const helmet = require('helmet')
-const { sms } = require('./services/africastalking')
+
 //connect to mongoDb server
 require("./services/database").Connect()
 
@@ -11,6 +11,7 @@ server.use(express.json())
 server.use(express.urlencoded({ extended: false }))
 
 server.set("view engine", "ejs")
+
 // in case we have need for statics
 server.use(express.static(path.join(__dirname, 'public')))
 server.use(express.static(path.join(__dirname, 'client', 'dist')))
@@ -41,8 +42,6 @@ server.use('/api/v1', v1Router)
 const v2Router = require('./routers/v2')
 server.use('/api/v2', v2Router)
 
-
-const math = require("./utils/math")
 
 // Every other Routes not included in V1 or V2
 server.get('*', async (req, res) => {
