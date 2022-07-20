@@ -45,7 +45,7 @@ server.use('/api/v2', v2Router)
 
 // Every other Routes not included in V1 or V2
 server.get('*', (req, res) => {
-    res.send("<h1>Home Page</h1>")
+    res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
 })
 
 
