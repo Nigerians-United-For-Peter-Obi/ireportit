@@ -43,7 +43,6 @@ server.use('/api/v1', v1Router)
 const v2Router = require('./routers/v2')
 server.use('/api/v2', v2Router)
 
-
 // Every other Routes not included in V1 or V2
 server.get('*', (req, res) => {
     res.send("<h1>Home Page</h1>")
