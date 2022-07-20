@@ -23,16 +23,17 @@ server.use(cors({
     methods: ['GET', 'POST'],
     optionsSuccessStatus: 200
 }))
+
 // helmetting the http//headers
-server.use(
-    helmet.frameguard(),
-    helmet.hsts(),
-    helmet.noSniff(),
-    helmet.dnsPrefetchControl(),
-    helmet.ieNoOpen(),
-    helmet.referrerPolicy(),
-    helmet.xssFilter()
-)
+// server.use(
+//     helmet.frameguard(),
+//     helmet.hsts(),
+//     helmet.noSniff(),
+//     helmet.dnsPrefetchControl(),
+//     helmet.ieNoOpen(),
+//     helmet.referrerPolicy(),
+//     helmet.xssFilter()
+// )
 
 // Version 1 Router (API) End Points
 const v1Router = require('./routers/v1')
@@ -44,9 +45,10 @@ server.use('/api/v2', v2Router)
 
 
 // Every other Routes not included in V1 or V2
-server.get('*', async (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "dist", "index.html"))
+server.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
 })
+
 
 const port = process.env.PORT || 4000
 server.listen(port, (err) => {
