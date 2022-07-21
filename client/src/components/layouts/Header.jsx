@@ -12,7 +12,7 @@ function Header(params) {
                             <div className="col-lg-12">
                                 <nav className="navbar navbar-expand-lg navbar-light">
                                     <a className="navbar-brand" href="#">
-                                        <img className="img-fluid logo" src="./assets/imageslogo-1.png" alt="streamlab-image" />
+                                        <img className="img-fluid logo" src="assets/images/logo-1.png" alt="streamlab-image" />
                                     </a>
                                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                         <div id="gen-menu-contain" className="gen-menu-contain">
