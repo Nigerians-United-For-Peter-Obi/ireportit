@@ -7,6 +7,7 @@ const Layout = ({ children }) => {
     return (
         <React.Fragment>
             <Helmet>
+                <base href="https://nupo-ireportit.herokuapp.com/" />
                 <script type="script" src="/assets/js/jquery-3.6.0.min.js"></script>
                 <script type="script" src="/assets/js/asyncloader.min.js"></script>
                 <script type="script" src="/assets/js/bootstrap.min.js"></script>
