@@ -24,7 +24,6 @@ Design and Developed by: Gentechtree.com
         jQuery('p:empty').remove();
 
         alert(0);
-
         /*------------------------
                 Page Loader
         --------------------------*/
