@@ -1,11 +1,11 @@
 
-import 'home.css'
+import './home.css'
 import Layout from '../layouts/Layout'
 const Home = () => {
     return (
         <>
             <Layout>
-            
+
             </Layout>
         </>
     )
