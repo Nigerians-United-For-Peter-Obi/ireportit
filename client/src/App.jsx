@@ -4,7 +4,7 @@ import Home from "./components/home/Home"
 
 function App() {
   useEffect(() => {
-    document.title = getTitle("We move")
+    document.title = getTitle("We are here")
   })
 
   return (
