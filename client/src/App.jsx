@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import getTitle from './utils/page_title'
+import Home from "./components/home/Home"
 
 function App() {
   useEffect(() => {
@@ -7,7 +8,7 @@ function App() {
   })
 
   return (
-    <></>
+    <><Home /></>
   )
 
 }
