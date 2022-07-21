@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { getTitle } from './utils/page_title'
+import getTitle from './utils/page_title'
 
 function App() {
   useEffect(() => {
