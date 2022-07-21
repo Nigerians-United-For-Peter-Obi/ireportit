@@ -4,7 +4,7 @@ import logo from "../../assets/images/logo-1.png";
 
 function Header({ children }) {
     return (
-        <>{logo}
+        <>
             <header id="gen-header" className="gen-header-style-1 gen-has-sticky">
                 <div className="gen-bottom-header">
                     <div className="container">
@@ -12,6 +12,7 @@ function Header({ children }) {
                             <div className="col-lg-12">
                                 <nav className="navbar navbar-expand-lg navbar-light">
                                     <a className="navbar-brand" href="#">
+                                        {logo}
                                         <img className="img-fluid logo" src={logo} alt="streamlab-image" />
                                     </a>
                                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
