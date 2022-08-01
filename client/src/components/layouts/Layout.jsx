@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
                 <script type="script" src="/assets/js/owl.carousel.min.js"></script>
                 <script type="script" src="/assets/js/jquery.waypoints.min.js"></script>
                 <script type="script" src="/assets/js/jquery.counterup.min.js"></script>
-                <script type="script" src="/assets/js/popper.min.js"></script>
+                <script type="script" src="/assets/js/popper.min.js"></script>.
                 <script type="script" src="/assets/js/swiper-bundle.min.js"></script>
                 <script type="script" src="/assets/js/isotope.pkgd.min.js"></script>
                 <script type="script" src="/assets/js/jquery.magnific-popup.min.js"></script>

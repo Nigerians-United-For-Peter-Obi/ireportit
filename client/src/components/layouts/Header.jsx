@@ -1,6 +1,6 @@
 
 import React from "react";
-import logo from "./src/assets/images/logo-1.png";
+import logo from "../../assets/images/logo-1.png";
 
 function Header({ children }) {
     return (
@@ -12,7 +12,6 @@ function Header({ children }) {
                             <div className="col-lg-12">
                                 <nav className="navbar navbar-expand-lg navbar-light">
                                     <a className="navbar-brand" href="#">
-                                        {logo}
                                         <img className="img-fluid logo" src={logo} alt="streamlab-image" />
                                     </a>
                                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
